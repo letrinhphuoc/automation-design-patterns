@@ -16,6 +16,7 @@ public class BaseTest {
     public void setupDriver(){
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--accept-lang=en-ca");
+        options.addArguments("incognito");
         this.driver = new ChromeDriver(options);
     }
 
